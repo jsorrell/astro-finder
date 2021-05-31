@@ -1,0 +1,52 @@
+body {
+	background: red;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	margin: 0px 10px;
+	margin-top: 20px;
+}
+
+.pos {
+	text-align: center;
+}
+
+.pos > div {
+	display: inline-block;
+	margin: 5px 20px;
+}
+
+.pos > div > * {
+	display: block;
+}
+
+#buttons {
+	text-align: center;
+	margin: 20px;
+}
+
+#buttons > * {
+	display: inline-block;
+	margin: 0px 20px;
+}
+
+#buttons input {
+	/* background: red; */
+}
+
+.pos label {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.pos input {
+	color: black;
+	background: red;
+	border: 2px solid black;
+	font-size: 16px;
+}

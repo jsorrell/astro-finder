@@ -1,1 +1,49 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="astro-finder.css" />
+</head>
+<body>
+<h1>Astro Finder</h1>
+<h2>Reference Location</h2>
+<div class="pos pos-in">
+	<div id="ref-ra">
+		<label>Right Ascension</label>
+		<input name="ref-ra" type="text" />
+	</div>
+	<div id="ref-dec">
+		<label>Declination</label>
+		<input name="ref-dec" type=text />
+	</div>
+</div>
+<h2>Target Location</h2>
+<div class="pos pos-in">
+	<div id=target-ra>
+		<label>Right Ascension</label>
+		<input name="target-ra" type="text" />
+	</div>
+	<div id="target-dec">
+		<label>Declination</label>
+		<input name="target-dec" type=text />
+	</div>
+</div>
+<h2>Change</h2>
+<div class="pos pos-out">
+	<div id="result-ra">
+		<label>Right Ascension</label>
+		<input name="output-ra" type="text" disabled="true" value="N/A" />
+	</div>
+	<div id="result-dec">
+		<label>Declination</label>
+		<input name="output-dec" type="text" disabled="true" value="N/A" />
+	</div>
+</div>
+
+<div id="buttons">
+	<input type="button" value="Update" onclick="update()" />
+	<input type="button" value="Zero RA" onclick="zero()" />
+</div>
+<script src="jquery-3.6.0.slim.min.js"></script>
+<script src="astro-finder.js"></script>
+</body>
