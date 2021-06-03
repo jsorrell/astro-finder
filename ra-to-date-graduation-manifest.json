@@ -1,11 +1,11 @@
 {
-  "name": "Astro-Finder",
-  "short_name": "Finder",
+  "name": "RA to Date Graduation",
+  "short_name": "RA to Date",
   "theme_color": "#ff0000",
   "background_color": "#ff0000",
   "display": "standalone",
   "orientation": "any",
-  "start_url": "/astro-finder/index.html",
+  "start_url": "/astro-finder/ra-to-date-graduation.html",
   "icons": [
     {
       "src": "icon.png",
