@@ -5,8 +5,7 @@
   "background_color": "#ff0000",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/",
-  "start_url": "/",
+  "start_url": "/astro-finder/index.html",
   "icons": [
     {
       "src": "icon.png",
