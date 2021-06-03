@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="astro-finder.css" />
+</head>
+<body>
+	<h1>RA to Date Graduation</h1>
+	<div class="inputs">
+		<div id="longitude">
+			<label>Longitude</label>
+			<input name="longitude" type="text" />
+		</div>
+		<div id="ra">
+			<label>Right Ascension</label>
+			<input name="ra" type="text" />
+		</div>
+	</div>
+	<div class="outputs">
+		<label>Date Graduation</label>
+		<input name="date-grad" type="text" disabled="true" />
+	</div>
+	<div class="buttons">
+		<input type="button" value="Update" onclick="update()" />
+	</div>
+	<script src="jquery-3.6.0.slim.min.js"></script>
+	<script src="helpers.js"></script>
+	<script src="ra-to-date-graduation.js"></script>
+</body>

@@ -2,38 +2,6 @@ let raTime = null;
 let raChange = null;
 let timer = null;
 
-function getRADeg(raStr) {
-	const raRegexp = /([\d.]+)h ?([\d.]+)m ?(?:([\d.]+)s)?/;
-
-	let raMatches = raRegexp.exec(raStr);
-	if (raMatches == null) {
-		return null;
-	}
-
-	let deg = parseFloat(raMatches[1]) + parseFloat(raMatches[2])/60;
-	if (typeof(raMatches[3]) !== 'undefined') {
-		deg += parseFloat(raMatches[3])/3600;
-	}
-
-	return 15 * deg;
-}
-
-function getDecDeg(decStr) {
-	const decRegexp = /([+-])([\d.]+)[°] ?([\d.]{1,2})['’′] ?(?:([\d.]+)[\"”″])?/;
-
-	let decMatches = decRegexp.exec(decStr);
-	if (decMatches == null) {
-		return null;
-	}
-
-	let deg = parseFloat(decMatches[2]) + parseFloat(decMatches[3])/60 + parseFloat(decMatches[4])/3600;
-	if (decMatches[1] === "-") {
-		deg = -deg;
-	}
-
-	return deg;
-}
-
 function getRAChange(raStart, raEnd) {
 	if (raStart == null || raEnd == null) {
 		return null;
