@@ -4,7 +4,7 @@
   "theme_color": "#ff0000",
   "background_color": "#ff0000",
   "display": "standalone",
-  "orientation": "any",
+  "orientation": "portrait",
   "start_url": "/astro-finder/polar.html",
   "icons": [
     {
