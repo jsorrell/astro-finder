@@ -1,0 +1,10 @@
+{
+  "name": "Astro-Finder",
+  "short_name": "Finder",
+  "theme_color": "#ff0000",
+  "background_color": "#ff0000",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/"
+}

@@ -7,19 +7,31 @@
 <body>
 	<h1>Polar Time Calculator</h1>
 	<div class="inputs">
-		<div id="longitude">
-			<label>Longitude</label>
-			<input name="longitude" type="text" />
+		<div class="input-section">
+			<h2>Longitude</h2>
+			<div class="input" id="longitude">
+				<input name="longitude" type="text" />
+			</div>
 		</div>
-		<div id="date-grad">
-			<label>Date Graduation</label>
-			<input name="date-grad" type="text" />
-			<input name="date-grad-parts" type="text" />
+		<div class="input-section" id="date-grad">
+			<h2>Date Graduation</h2>
+			<div class="input">
+				<label>Month</label>
+				<input name="date-grad" type="text" />
+			</div>
+			<div class="input">
+				<label>Ticks</label>
+				<input name="date-grad-parts" type="text" />
+			</div>
 		</div>
 	</div>
 	<div class="outputs">
-		<label>Rotated Time</label>
-		<input name="rot-time" type="text" disabled="true" />
+		<div class="input-section">
+			<div class="input">
+				<label>Rotated Time</label>
+				<input name="rot-time" type="text" disabled="true" />
+			</div>
+		</div>
 	</div>
 	<div class="buttons">
 		<input type="button" value="Update" onclick="update()" />
