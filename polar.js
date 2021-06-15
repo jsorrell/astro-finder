@@ -18,6 +18,7 @@ function update() {
 
 	dateGrad = +($("input[name='date-grad']").val()) + $("input[name='date-grad-parts']").val()/15;
 	longitude = +($("input[name='longitude']").val());
+	setCookie("longitude", "" + longitude);
 
 	function tick() {
 		let polarTime = calculatePolarAlignmentTime(+(longitude), dateGrad);
@@ -26,3 +27,10 @@ function update() {
 	}
 	tick();
 }
+
+$(document).ready(function() {
+	let longCookie = getCookie("longitude");
+	if (longCookie !== null) {
+		$("input[name='longitude']").val(longCookie);
+	}
+});

@@ -11,6 +11,8 @@ function update() {
 	ra = getRADeg($("input[name='ra']").val());
 	longitude = +($("input[name='longitude']").val());
 
+	setCookie("longitude", "" + longitude);
+
 	function tick() {
 		let siderealTime = calculateLocalSiderealTime(longitude)/15;
 		let dateGraduation = (zero + (ra + siderealTime)/2) % 12;
@@ -22,3 +24,10 @@ function update() {
 	}
 	tick();
 }
+
+$(document).ready(function() {
+	let longCookie = getCookie("longitude");
+	if (longCookie !== null) {
+		$("input[name='longitude']").val(longCookie);
+	}
+});
